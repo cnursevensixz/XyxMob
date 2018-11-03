@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.xyxga.autoimpression.InataActivity"
+    tools:showIn="@layout/activity_inata"
+    android:background="@color/colorPrimary">
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/mamamas"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/satataint"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/succsestotint"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="TextView"
+                            android:padding="10dp"
+                            android:background="@color/colorAccent"
+                            android:textColor="#fff"
+                            android:gravity="left"
+                            android:fontFamily="sans-serif-condensed"/>
+
+                        <TextView
+                            android:id="@+id/failtotint"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="TextView"
+                            android:padding="10dp"
+                            android:background="@color/colorAccent"
+                            android:textColor="#fff"
+                            android:gravity="right"
+                            android:fontFamily="sans-serif-condensed"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/shoewint"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="TextView"
+                            android:padding="10dp"
+                            android:background="@color/colorAccent"
+                            android:textColor="#fff"
+                            android:gravity="left"
+                            android:fontFamily="sans-serif-condensed"/>
+
+                        <TextView
+                            android:id="@+id/adopenBanint"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="TextView"
+                            android:padding="10dp"
+                            android:background="@color/colorAccent"
+                            android:textColor="#fff"
+                            android:gravity="right"
+                            android:fontFamily="sans-serif-condensed"/>
+                    </LinearLayout>
+                    <TextView
+                        android:id="@+id/rateSBanint"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="\n"
+                        android:background="@color/colorPrimary"
+                        android:padding="5dp"
+                        android:textColor="#fff"
+                        android:fontFamily="sans-serif-condensed"/>
+
+                    <LinearLayout
+                        android:id="@+id/satata2int"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_below="@+id/satata"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tanggalint"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="\n"
+                            android:textStyle="bold"
+                            android:visibility="gone"/>
+
+                    </LinearLayout>
+                     <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+                     <LinearLayout
+                        android:id="@+id/mamamas"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="10dp"
+                        android:background="@color/colorAccent"
+>
+                        <Button
+                            android:id="@+id/set_interes"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:layout_marginLeft="3dp"
+                            android:layout_marginBottom="3dp"
+                            android:layout_marginTop="3dp"
+                            android:text="Pengaturan"
+                            android:textAllCaps="false"
+                            tools:ignore="RtlCompat"
+                            android:background="@drawable/button_banner_left"
+                            android:textColor="#fff"
+                            android:fontFamily="sans-serif-condensed"/>
+
+                        <Button
+                            android:id="@+id/reset"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:onClick="ResetOnClick"
+                            android:text="Reset Statistik"
+                            android:textAllCaps="false"
+                            tools:ignore="RtlCompat"
+                            android:background="@drawable/button_banner_right"
+                            android:textColor="#fff"
+                            android:fontFamily="sans-serif-condensed"/>
+
+                    </LinearLayout>
+                     </LinearLayout>
+                      </LinearLayout>
+
+            </RelativeLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="15dp"
+                android:background="@color/colorPrimary">
+                <TextView
+                    android:id="@+id/A11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="TextView"
+                    android:textColor="#fff"
+                    android:fontFamily="sans-serif-condensed"/>
+
+                <TextView
+                    android:id="@+id/timeautoReloadINTERTV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="TextView"
+                    android:textColor="#fff"
+                    android:fontFamily="sans-serif-condensed"/>
+
+                <TextView
+                    android:id="@+id/keywordInter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="TextView"
+                    android:textColor="#fff"
+                    android:fontFamily="sans-serif-condensed"/>
+
+                <TextView
+                    android:id="@+id/timede"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:textColor="#fff"
+                    android:fontFamily="sans-serif-condensed"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:srcCompat="@android:drawable/ic_media_play" />
+
+</android.support.constraint.ConstraintLayout>

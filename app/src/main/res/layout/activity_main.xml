@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.xyxga.autoimpression.MainActivity"
+    android:background="@drawable/background"
+    android:gravity="bottom">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World!"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:visibility="gone"/>
+    <RelativeLayout
+        android:id="@+id/atas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="45dp">
+    <TextView
+    android:id="@+id/XyxmobHeader"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Xyxmob"
+    android:paddingLeft="15dp"
+    android:textStyle="bold"
+    android:textSize="35dp"
+    android:fontFamily="sans-serif-condensed"/>
+    <TableRow
+        android:id="@+id/XyxmobDesc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:layout_below="@id/XyxmobHeader">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-condensed"
+            android:paddingLeft="15dp"
+            android:text="AdMob Auto Impression "
+            android:textColor="#888"
+            android:textSize="15dp"></TextView>
+
+        <WebView
+            android:id="@+id/web_view"
+            android:layout_width="20dp"
+            android:layout_height="13dp"
+            android:layout_margin="4dp"
+            android:visibility="gone"></WebView>
+    </TableRow>
+    </RelativeLayout>
+
+    <RelativeLayout
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:layout_below="@+id/atas">
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView"
+        android:background="@drawable/button_green"
+        android:onClick="Banner"
+        android:text="Banner"
+        android:textAllCaps="false"
+        android:textColor="#fff"
+        android:textStyle="bold"
+        android:textSize="17dp"
+        android:fontFamily="sans-serif-condensed"
+        android:gravity="center_vertical"
+        android:padding="15dp"
+        style="?android:attr/borderlessButtonStyle"/>
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/button"
+        android:onClick="Inters"
+        android:text="Interstisial"
+        android:background="@drawable/button_blue"
+        android:textColor="#fff"
+        android:textAllCaps="false"
+        android:textStyle="bold"
+        android:textSize="17dp"
+        android:fontFamily="sans-serif-condensed"
+        android:gravity="center_vertical"
+        android:padding="15dp"
+        style="?android:attr/borderlessButtonStyle"/>
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/button2"
+        android:onClick="Setting"
+        android:text="Pengaturan"
+        android:textColor="#fff"
+        android:background="@drawable/button_red"
+        android:textAllCaps="false"
+        android:fontFamily="sans-serif-condensed"
+        android:gravity="center_vertical"
+        android:textStyle="bold"
+        android:textSize="17dp"
+        android:padding="15dp"
+        style="?android:attr/borderlessButtonStyle"/>
+
+    <TableRow
+        android:id="@+id/tabel"
+        android:layout_below="@id/button3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:id="@+id/ClearCache"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="190dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:background="@drawable/button_red_dark"
+            android:fontFamily="sans-serif-condensed"
+            android:gravity="center_vertical"
+            android:onClick="Setting"
+            android:padding="15dp"
+            android:text="Hapus Cache"
+            android:textAllCaps="false"
+            android:textColor="#fff"
+            android:textSize="17dp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/Getlok"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:background="@drawable/button_yellow_dark"
+            android:fontFamily="sans-serif-condensed"
+            android:gravity="center_vertical"
+            android:onClick="Setting"
+            android:padding="15dp"
+            android:text="Dapatkan Lokasi"
+            android:textAllCaps="false"
+            android:textColor="#fff"
+            android:textSize="17dp"
+            android:textStyle="bold" />
+    </TableRow>
+
+    <Button
+        android:id="@+id/Tentang"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tabel"
+        android:layout_alignParentStart="true"
+        android:background="@drawable/button_yellow"
+        android:fontFamily="sans-serif-condensed"
+        android:gravity="center_vertical"
+        android:onClick="open"
+        android:padding="15dp"
+        android:text="Tentang"
+        android:textAllCaps="false"
+        android:textColor="#fff"
+        android:textSize="17dp"
+        android:textStyle="bold" />
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/button4"
+        android:text="TextView"
+        android:visibility="gone"/>
+</RelativeLayout>
+</RelativeLayout>
+
